@@ -62,6 +62,10 @@ const config: Config = {
         },
       },
       keyframes: {
+        'marquee-right': {
+          from: { transform: 'translateX(-50%)' },
+          to: { transform: 'translateX(0%)' },
+        },
         'accordion-down': {
           from: {
             height: '0',
@@ -80,6 +84,7 @@ const config: Config = {
         },
       },
       animation: {
+        'marquee-right': 'marquee-right var(--marquee-duration, 20s) linear infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
